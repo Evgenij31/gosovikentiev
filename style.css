@@ -1,0 +1,915 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    cursor: default;
+}
+
+.header1 {
+    width: 100%;
+    background-color: rgb(0, 89, 255);
+    box-shadow: 0px 5px 15px white;
+    animation: showUp .7s;
+}
+
+.header1 h1,
+.header1 h2 {
+    text-align: center;
+    padding: 3px;
+    animation: slide-left .7s;
+}
+
+#lang-select p {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#lang-img {
+    width: 30px;
+}
+#lang-select{
+    margin: 10px;
+}
+
+#mobile-nav,
+#open-Mnav {
+    visibility: hidden;
+    position: absolute;
+}
+
+#mobile-nav{
+    padding: 20px;
+}
+
+#open-Mnav{
+    border: 0;
+    margin-left: 10px;
+    background-color: rgb(0, 89, 255);
+}
+#close-Mnav{
+    border: 0;
+    background-color: rgb(0, 89, 255);
+}
+
+#main-ul-mn{
+    margin-left: 20px;
+}
+#main-ul-mn li, #main-ul-mn a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+#tab {
+    width: 13.9%;
+    border: 0;
+    font-size: 17px;
+    background-color: rgb(0, 71, 202);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.25s ease-in-out;
+    padding: 6px;
+}
+
+#tab:hover {
+    transform: translateY(-5px);
+    border-bottom: 1px solid white;
+}
+
+.nav-bar {
+    max-height: 62px;
+    background-color: rgb(0, 71, 202);
+    visibility: visible;
+    position: relative;
+}
+
+/*auto slider*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.mySlides img {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#auto-slider1 {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.text {
+    color: black;
+    font-size: 18px;
+    padding: 8px 8px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.text a {
+    color: black;
+}
+
+.numbertext {
+    color: grey;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-40px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-right-rev {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-40px);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(180px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes showUp {
+    from{
+        transform: translateY(-160px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#div-with-img {
+    margin-top: 50px;
+    width: 100%;
+    background-image: url(images/Sou_goso_vikentiev2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moto h1 {
+    text-align: center;
+    padding: 30px;
+    padding-top: 75px;
+    transition: .25s ease-in-out;
+}
+.moto h1:hover{
+    text-shadow: 0px 0px 10px;
+    color: rgb(0, 86, 245);
+}
+
+#about-short {
+    padding: 10px;
+    font-size: 17px;
+    background-color: rgba(0, 71, 202, 0.634);
+}
+
+#about-short h2,
+#about-short p {
+    padding: 8px;
+}
+
+#more-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(119, 194, 255);
+    border: 0;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+#more-btn:hover {
+    padding-right: 15px;
+    padding-left: 10px;
+    box-shadow: 4px 4px 8px;
+}
+
+#div-color-wrapper {
+    background: rgba(0, 71, 202, 0.500);
+}
+
+#fb-txt {
+    font-size: 22px;
+}
+
+#fb-page {
+    margin: 20px;
+}
+
+#fb-txt,
+#fb-main {
+    display: inline-block;
+    margin: 20px;
+}
+
+#fb-txt{
+    margin-left: 40px;
+}
+#fb-txt p{
+    padding: 22px;
+    transition: .25s ease-in-out;
+    border-radius: 5px;
+}
+
+#fb-txt p:hover{
+    background-color: rgba(0, 71, 202, 0.500);
+    transform: translateX(-20px);
+}
+
+#links {
+    width: 99%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#link-wrapper {
+    display: inline-block;
+    width: 19.3%;
+    margin: 1px;
+}
+
+#link img:hover{
+    transform: translateY(-3px);
+}
+#link img {
+    width: 100%;
+    height: 140px;
+    padding: 10px;
+    display: inline-block;
+    transition: .15s ease-in-out;
+}
+
+#links h2 {
+    padding: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p,
+footer #ul-info {
+    text-align: left;
+    padding: 10px;
+}
+
+#ul-links {
+    float: right;
+    text-align: right;
+    padding: 10px;
+    list-style-type: none;
+    transform: translateY(-20px);
+}
+#ul-info{
+    list-style-type: none;
+}
+
+#ul-links a,
+#ul-info a {
+    text-decoration: none;
+    color: white;
+    transition: .1s;
+}
+
+#ul-links a:hover{
+    color: rgb(206, 206, 206);
+}
+.img-center {
+    text-align: center;
+    margin-left: 30%;
+    transition: .2s ease-in-out;
+}
+.img-center:hover{
+    filter: drop-shadow(0px 0px 10px #4444dd);
+}
+
+.last-element {
+    text-align: left;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+#ul-links,
+#ul-info,
+.img-center {
+    display: inline-block;
+}
+
+#about-short,
+#fb-page,
+#links,
+.moto {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/*optimizations*/
+@media only screen and (max-width: 1025px) {
+    .nav-bar{
+        visibility: hidden;
+        position: absolute;
+    }
+    #open-Mnav{
+        visibility: visible;
+        position: relative;
+    }
+    .slideshow-container{
+        width: 80%;
+    }
+    #link-wrapper{
+        width: 19%;
+    }
+    #links{
+        margin-left: 0.5%;
+        margin-right: 1.5%;
+    }
+    #link img{
+        height: 120px;
+    }
+    .img-center{
+        margin-left: 24%;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    #fb-txt{
+        visibility: hidden;
+        position: absolute;
+    }
+    .img-center{
+        margin-left: 20%;
+    }
+    #div-with-img{
+        background-image: url(images/Sou_goso_vikentiev-mobile.jpg);
+        background-size: cover;
+    }
+    #link-wrapper {
+        display: inline-block;
+        width: 18.6%;
+    }
+    #link img{
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .text{
+        font-size: 12px;
+    }
+    .moto h1{
+        font-size: 20px;
+    }
+    #fb-page{
+        width: 88%;
+    }
+    #links{
+        width: 100%;
+    }
+    #link-wrapper{
+        display: block;
+        width: 93%;
+    }
+    #link img{
+        height: 160px;
+    }
+    #ul-links{
+        visibility: hidden;
+        position: absolute;
+    }
+    .img-center{
+        margin: 0;
+    }
+    #div-with-img{
+        background-image: url(images/Sou_goso_vikentiev-mobile2.jpg);
+        background-size: auto;
+    }
+}
+/*page css*/
+.header2 {
+    width: 100%;
+    background-color: rgb(0, 89, 255);
+    box-shadow: 0px 5px 15px white;
+}
+
+.header2 h1,
+.header2 h2 {
+    text-align: center;
+    padding: 3px;
+}
+.page-title{
+    background-color: rgb(0, 89, 255);
+    text-align: center;
+    padding: 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 28px;
+    margin-top: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*main for a page*/
+.main-page{
+    background-color: rgba(0, 71, 202, 0.634);
+    border-radius: 10px;
+}
+/*about*/
+#misija, #vizija{
+    width: 46.8%;
+    display: inline-table;
+    text-align: justify;
+    padding: 20px;
+}
+#misija{
+    border-right: 2px solid rgb(0, 140, 255);
+}
+#misija h2, #vizija h2{
+    text-align: center;
+    padding: 8px;
+}
+.mapa p{
+    padding: 15px;
+}
+
+.mapa{
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-txt{
+    margin: 20px;
+    width: 94%;
+    text-align: justify;
+    padding: 20px;
+}
+.about-txt h2{
+    text-align: center;
+    padding: 10px;
+}
+#table-info{
+    margin: 3%;
+    border: 2px solid white;
+    color: white;
+}
+#table-info td{
+    padding: 6px;
+    border: 2px solid rgb(0, 140, 255);
+    color: white;
+}
+#table-info a{
+    color: white;
+}
+#pod-naslov{
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 2px double rgb(0, 140, 255);
+}
+.gallery{
+    display: inline;
+}
+.gallery img{
+    width: 24.65%;
+}
+.img-container{
+    margin: 20px;
+    padding: 20px;
+}
+/*custom scrollbar*/
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 140, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 108, 231);
+}
+/*struki*/
+.info-btn-wrapper{
+    margin: 10px;
+}
+.info-btn{
+    margin-top: 10px;
+    padding: 4px;
+    background-color: rgb(48, 159, 250);
+    border: 0;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.15s ease-in-out;
+    color: white;
+}
+.info-btn:hover{
+    box-shadow: 0px 2px 8px;
+    transform: translateY(-2px);
+}
+.struki-container a{
+    width: 0%;
+}
+.struka{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.struka:hover{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#struka-click{
+    text-decoration: none;
+    color: white;
+}
+.struka h3, .struka p{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.500);
+    padding: 10px;
+    text-shadow: 0px 0px 6px black;
+}
+#struka-text-wrapper{
+    padding: 30px;
+}
+/*activities*/
+.activities-wrapper{
+    margin: 20px;
+    padding: 20px;
+}
+.activities-wrapper h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.under-li{
+    padding-left: 20px;
+}
+#act-list{
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+#act-list li{
+    font-size: 18px;
+    transition: .3s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#act-list li:hover{
+    padding-left: 5px;
+}
+/*kadar*/
+.kadar-container{
+    margin: 20px;
+    padding: 20px;
+}
+#sub-list1{
+    padding-left: 20px;
+}
+/*Oglasna tabla*/
+.ot-links{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#ot-link{
+    transition: .15s;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(0, 119, 255);
+    margin: 5px;
+}
+#ot-link a{
+    text-decoration: none;
+    color: white;
+}
+#ot-link img{
+    width: 10px;
+    height: 14px;
+}
+#ot-link:hover{
+    box-shadow: 0 0 6px;
+    transform: scale(1.025);
+}
+.ot-info{
+    margin: 10px;
+    padding: 10px;
+}
+.ot-info h2{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.ot-info h4, .ot-info p{
+    padding: 8px;
+}
+.ot-info article{
+    padding: 10px;
+    border-bottom: 2px solid blue;
+    border-left: 0px solid black;
+}
+.ot-info article:hover{
+    border-left: 2px solid black;
+    background-color: rgb(0, 73, 168);
+    transition: .15s;
+}
+/*optimizations 2*/
+@media only screen and (max-width: 1025px){
+    #misija, #vizija{
+        width: 45%;
+    }
+    .about-txt{
+        width: 90%;
+    }
+    #table-info{
+        width: 90%;
+    }
+    .gallery img{
+        width: 24.2%;
+    }
+}
+@media only screen and (max-width: 769px){
+    #misija, #vizija{
+        width: 44%;
+    }
+    .gallery img{
+        width: 24.2%;
+    }
+}
+@media only screen and (max-width: 426px){
+    #misija{
+        width: 90%;
+        display: block;
+        border: 0;
+    }
+    #vizija{
+        width: 90%;
+        display: block;
+        border: 0;
+    }
+    .about-txt{
+        width: 80%;
+    }
+    .mapa, #table-info, #table-title{
+        visibility: hidden;
+        position: absolute;
+    }
+    .gallery img{
+        width: 98%;
+    }
+    .header2 h1{
+        font-size: 30px;
+    }
+}
+
+/*contact*/
+.contact-wrapper{
+    padding: 10px;
+    margin: 10px;
+}
+.contact-wrapper a{
+    color: white;
+}
+.contact-wrapper h3{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.contact-form{
+    position: relative;
+    visibility: visible;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-form iframe{
+    width: 400px;
+    height: 680px;
+    border-radius: 8px;
+}
+.socials{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact-form, .contact-info{
+    display: inline-table;
+    width: 33.5%;
+}
+.socials img{
+    filter: grayscale(1);
+    width: 70px;
+    transition: .15s ease-in-out;
+}
+.socials img:hover{
+    filter: grayscale(0);
+}
+#contact-link{
+    visibility: hidden;
+    position: absolute;
+}
+.snow{
+    /*position: absolute;
+    visibility: hidden;*/
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    z-index: 0;
+}
+.contact-form-link{
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+}
+.eTwinning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 126, 255, 0.448);
+    margin: 10px;
+}
+.eTwinning img {width: 10%; margin: 10px;}
+.dualni-desc {
+    padding: 30px;
+}
+.dualni-desc p {margin-bottom: 20px;}
+.dualni-desc p b {
+    font-size: 18px;
+}
+#dualni-ul{
+    padding-left: 30px;
+}
+#dualni-ul li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#back-dualni{
+    margin: 10px;
+}
+#back-dualni a {
+    text-decoration: none;
+    color: white;
+}
+.info-zapis-desc{
+    padding: 20px;
+}
+.info-zapis-desc h3 {text-align: center; padding: 15px; font-size: 24px;}
+.info-zapis-desc ul {padding-left: 30px;}
+#rokovi {margin-top: 15px;}
+
+.paralelki {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paralelki section{
+    width: 100%;
+}
+.paralelki section ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+.paralelki section h3 a{color: rgb(163, 163, 163); text-decoration: none;}
+#god-obrazovanie{
+    text-align: center;
+    padding: 10px;
+}
+/*optimizations 3*/
+@media only screen and (max-width: 769px) {
+    .contact-form, .contact-info{
+        width: 42%;
+    }
+    .eTwinning img {
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .contact-info{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form{
+        position: absolute;
+        visibility: hidden;
+    }
+    .contact-form-link{
+        visibility: visible;
+        position: relative;
+    }
+    .ot-links{
+        display: inline-block;
+    }
+    #ot-link{
+        width: 91.5%;
+    }
+    .page-title{
+        margin-right: 18%;
+        margin-left: 18%;
+    }
+    .eTwinning img {
+        width: 35%;
+    }
+    .paralelki{
+        display: block;
+    }
+    .paralelki section {
+        margin-bottom: 20px;
+    }
+}

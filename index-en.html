@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Site Goso Vikentiev">
+    <meta name="keywords" content="Goso Vikentiev, goso vikentiev, kocani">
+    <title>High school "Goso Vikentiev" - Kocani</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/logogoso2.png">
+</head>
+
+<body>
+    <div class="header1">
+        <h1>MHS „GOSHO VIKENTIEV”</h1>
+        <h2>Kocani</h2>
+        <div id="lang-select">
+            <p id="lang">
+                <a href="index.html"><img id="lang-img" src="images/lang-select/mk-flag.png"></a>
+            </p>
+            <p id="lang">
+                <a href="index-en.html"><img id="lang-img" src="images/lang-select/english-flag.png"></a>
+            </p>
+        </div>
+        <div id="m-nav-bt-wrapper">
+            <button id="open-Mnav" onclick="OpenMobileNav()"><img src="images/mobile-nav/nav-bar-ico.png"></button>
+        </div>
+        <div id="mobile-nav">
+            <button id="close-Mnav" onclick="CloseMobileNav()"><img src="images/mobile-nav/x-ico.png"></button>
+            <br><br>
+            <ul id="main-ul-mn">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="struki.html">Proffesions</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Kadar.html">School staff</a></li>
+                <li><a href="oTabla.html">Bulletin board</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-bar">
+            <button id="tab" onclick="HomeP()">Start</button>
+            <button id="tab" onclick="About()">About us</button>
+            <button id="tab" onclick="Struki()">Proffesions</button>
+            <button id="tab" onclick="Act()">Activities</button>
+            <button id="tab" onclick="UKadar()">School staff</button>
+            <button id="tab" onclick="OTabla()">Bulletin board</button>
+            <button id="tab" onclick="Contact()">Contact</button>
+        </div>
+    </div>
+    <main>
+        <!--auto-slider-->
+        <div id="auto-slider1">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/auto-slider/gv4.jpg">
+                    <div class="text">Take the right step, choose vocational education</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/auto-slider/gv2.JPG"><br>
+                    <div class="text">MHS „GOSHO VIKENTIEV”</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/auto-slider/gv1.jpg"><br>
+                    <div class="text">Electrical, mechanical and traffic profession</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/auto-slider/gv3.JPG"><br>
+                    <div class="text"><a href="zapisuvanje-informacii.html">Enrollment information</a></div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 4500);
+                }
+            </script>
+        </div>
+
+        <div id="div-with-img">
+            <div id="div-color-wrapper">
+                <div class="moto">
+                    <h1>Friendship - Cooperation - Creativity - Competence</h1>
+                </div>
+                <div id="about-short">
+                    <h2>MHS „GOSHO VIKENTIEV” - Kocani</h2>
+                    <p>
+                        The high school "Goso Vikentiev" was established by a decision of the People's Board of Kocani on December 5, 1959 year as an industrial school with practical training. Until the formation of the level of school, the classes were worked on in the basement of the building the school. Metalworkers, metalworkers, locksmiths and locksmiths were trained. In the school year 1962/63 the school started its own building in the current primary school "Malina Popivanova".
+                        <br>
+                        <button id="more-btn" onclick="About()"><span>Learn more</span></button>
+                    </p>
+                </div>
+                <div id="fb-page">
+                    <div id="main-fb">
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="CCZUH5Sb"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/gvkofb" data-tabs="timeline"
+                        data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/gvkofb" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/gvkofb">СОУ „Гошо Викентиев“ Кочани, Македонија</a>
+                        </blockquote>
+                    </div>
+                    <div id="fb-txt">
+                        <p>
+                            &larr; Follow our facebook page
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                <div class="eTwinning">
+                    <img src="images/etwinning-logo.png" alt="">
+                </div>
+                <div id="links">
+                    <h2 id="title3">Links:</h2>
+                    <div id="link-wrapper">
+                        <a id="link" target="_blank" href="https://dic.edu.mk"><img src="images/links/drzaven-ispiten-centar-skopje.jpg"></a>
+                    </div>
+                    <div id="link-wrapper">
+                        <a id="link" target="_blank" href="https://mon.gov.mk"><img src="images/links/mon.png"></a>
+                    </div>
+                    <div id="link-wrapper">
+                        <a id="link" target="_blank" href="https://ednevnik.edu.mk"><img src="images/links/ednevnik.jpg"></a>
+                    </div>
+                    <div id="link-wrapper">
+                        <a id="link" target="_blank" href="http://www.e-matematika.mk"><img src="images/links/emtm.jpg"></a>
+                    </div>
+                    <div id="link-wrapper">
+                        <a id="link" target="_blank" href="https://www.bro.gov.mk"><img src="images/links/bro-logo.png"></a>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!--<embed id="novosti-embed" type="text/html" src="novosti.html">
+        <p id="nov-link">
+            <a id="nov-link" href="oTabla.html">Види повеќе новости</a>
+        </p>-->
+    </main>
+    <footer>
+        <ul id="ul-info">
+            <li>
+                <a href="https://www.google.com/maps/place/Gosho+Vikenti
+                ev+High+School/@41.9139396,22.4359967,17z/data=!3m1!4b1!4m5!
+                3m4!1s0x0:0xf71acb29da1a14e3!8m2!3d41.9139356!4d22.4381854?hl=en">
+                Street: Todosija Paunov<br>2300 Kocani, Macedonia</a>
+            </li>
+            <li>Phone: 033 345 432</li>
+            <li>E-mail: <a href = "mailto: info@gosovikentiev.mk">info@gosovikentiev.mk</a></li>
+        </ul>
+        <ul id="ul-links">
+            <li><a href="index.html">Start</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="struki.html">Proffesions</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Kadar.html">School staff</a></li>
+                <li><a href="oTabla.html">Bulletin board</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="img-center"><img src="images/logogoso2.png"></p>
+        <p class="last-element">The Web Design Team - MHS „GOSHO VIKENTIEV” 2022©. All rights reserved.</p>
+    </footer>
+    <script src="javaScript-en.js"></script>
+</body>
+
+</html>
