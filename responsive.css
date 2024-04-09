@@ -83,4 +83,23 @@
     #logo-footer {
         padding: 3rem;
     }
+    
+    .text-image {
+        flex-direction: column;
+    }
+
+    .text-image img {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    #za-nas-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #struki .struka {
+        background-size: cover;
+    }
 }

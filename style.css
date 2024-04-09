@@ -23,7 +23,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    box-shadow: 0px 5px 15px white;
+    box-shadow: 0px 0px 5px rgb(83, 83, 83);
     font-family: Russo One;
     letter-spacing: 2px;
     padding-top: 2rem;
@@ -38,6 +38,11 @@ header h2 {
 
 header h1 {
     font-size: 3.8vh;
+}
+
+.page-selector {
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgb(179, 179, 179);
 }
 
 #lang-select p {
@@ -438,4 +443,89 @@ footer #ul-info {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(0, 108, 231);
+}
+
+
+/*pages style*/
+
+#za-nas-main {
+    padding-block: 3rem;
+}
+
+#za-nas-main h5 {
+    font-size: 2.7vh;
+    padding: 12px 0;
+}
+
+#za-nas-main p {
+    font-size: 1.8vh;
+}
+
+.text-image {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5%;
+}
+
+.text-image img {
+    width: 40%;
+    object-fit: cover;
+}
+
+#za-nas-long-text h5 {
+    font-size: 2.4vh;
+}
+
+#za-nas-long-text p {
+    font-size: 2vh;
+}
+
+#za-nas-tabela table {
+    border: 1px solid var(--tertiary-color);
+    border-collapse: collapse;
+}
+
+#za-nas-tabela table a {
+    color: var(--custom-white);
+}
+
+#za-nas-tabela td {
+    border: 1px solid var(--tertiary-color);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 5px;
+}
+
+#struki .struka {
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--secondary-color);
+    background-attachment: fixed;
+    background-position: center;
+    margin: 4vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+#struki .struka:hover {
+    box-shadow: 0 0 4px var(--shadow-color);
+    background-size: 110%;
+}
+
+#struki .elektrotehnicka {
+    background-image: url(images/struki/electro-image.jpg);
+}
+
+#struki .masinska {
+    background-image: url(images/struki/machine.jpg);
+}
+
+#struki .soobrakajna {
+    background-image: url(images/struki/soobrakaj.jpg);
 }
