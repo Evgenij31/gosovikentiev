@@ -1,0 +1,86 @@
+@media (max-width: 500px) {
+    #openNav {
+        display: block;
+        padding: 10px;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        display: none;
+        gap: 1%;
+    }
+
+    #nav-bar {
+        justify-content: left;
+    }
+
+    #nav-bar .responsive {
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+    }
+
+    #closeNav {
+        float: left;
+        margin: 16px;
+    }
+
+    #vizija-section {
+        padding: 0 1rem;
+    }
+
+    #struki .container,
+    #za-usilisteto .container,
+    #vizija-section .container,
+    footer {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 3rem;
+    }
+
+    #za-usilisteto .map iframe {
+        width: 100%;
+    }
+
+    .gallery-section {
+        padding: 0;
+        margin: 0;
+    }
+
+    .gallery-section .container {
+        height: 60vh;
+    }
+
+    .gallery-section button {
+        padding: 5px;
+    }
+
+    #vizija-section .right img {
+        width: 100%;
+        margin: 4vh 0;
+    }
+
+    #links #link-wrapper {
+        width: 40%;
+    }
+
+
+    .spacer {
+        height: 10vh;
+    }
+
+    #ul-links,
+    #ul-info {
+        text-align: center;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    #logo-footer {
+        padding: 3rem;
+    }
+}

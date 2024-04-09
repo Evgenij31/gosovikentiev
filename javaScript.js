@@ -1,20 +1,3 @@
-//mobile-nav-bar
-function OpenMobileNav(){
-    document.getElementById("mobile-nav").style.visibility="visible";
-    document.getElementById("mobile-nav").style.position="relative";
-    document.getElementById("mobile-nav").style.animation="slide-right 0.4s";
-    document.getElementById("open-Mnav").style.visibility="hidden";
-    document.getElementById("open-Mnav").style.position="absolute";
-}
-function CloseMobileNav(){
-    document.getElementById("mobile-nav").style.animation="slide-left 0.4s";
-    setTimeout(() => {
-        document.getElementById("mobile-nav").style.visibility="hidden";
-        document.getElementById("mobile-nav").style.position="absolute";
-        document.getElementById("open-Mnav").style.visibility="visible";
-        document.getElementById("open-Mnav").style.position="relative";
-    }, 400)
-}
 //navigation buttons
 function HomeP(){
     document.location="index.html";

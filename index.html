@@ -9,12 +9,15 @@
     <meta name="keywords" content="Goso Vikentiev, goso vikentiev, kocani">
     <title>СОУ „Гошо Викентиев” - Кочани</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="shortcut icon" href="images/logogoso2.png">
-    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fgvkofb%2F&psig=AOvVaw04sjFYsbMrGbk8n25-l7wX&ust=1676724531670000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDh697LnP0CFQAAAAAdAAAAABAQ"/>
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fgvkofb%2F&psig=AOvVaw04sjFYsbMrGbk8n25-l7wX&ust=1676724531670000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDh697LnP0CFQAAAAAdAAAAABAQ" />
 </head>
 
 <body>
-    <div class="header1">
+    <header>
         <h1>СОУ „ГОШО ВИКЕНТИЕВ”</h1>
         <h2>Кочани</h2>
         <div id="lang-select">
@@ -25,171 +28,192 @@
                 <a href="index-en.html"><img id="lang-img" src="images/lang-select/english-flag.png"></a>
             </p>
         </div>
-        <div id="m-nav-bt-wrapper">
-            <button id="open-Mnav" onclick="OpenMobileNav()"><img src="images/mobile-nav/nav-bar-ico.png"></button>
+
+        <div id="nav-bar">
+            <button id="openNav" onclick="OpenMobileNav()"><img src="images/mobile-nav/nav-bar-ico.png"></button>
+            <div class="responsive">
+                <button id="closeNav" onclick="CloseMobileNav()"><img src="images/mobile-nav/x-ico.png"></button>
+                <ul id="nav-ul">
+                    <li><a href="index.html">Почетна</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="struki.html">Струки</a></li>
+                    <li><a href="activities.html">Активности</a></li>
+                    <li><a href="Kadar.html">Училишен Кадар</a></li>
+                    <li><a href="oTabla.html">Огласна Табла</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="mobile-nav">
-            <button id="close-Mnav" onclick="CloseMobileNav()"><img src="images/mobile-nav/x-ico.png"></button>
-            <br><br>
-            <ul id="main-ul-mn">
-                <li><a href="index.html">Почетна</a></li>
-                <li><a href="about.html">За нас</a></li>
-                <li><a href="struki.html">Струки</a></li>
-                <li><a href="activities.html">Активности</a></li>
-                <li><a href="Kadar.html">Училишен Кадар</a></li>
-                <li><a href="oTabla.html">Огласна Табла</a></li>
-                <li><a href="contact.html">Контакт</a></li>
-            </ul>
-        </div>
-        <div class="nav-bar">
-            <button id="tab" onclick="HomeP()">Почетна</button>
-            <button id="tab" onclick="About()">За нас</button>
-            <button id="tab" onclick="Struki()">Струки</button>
-            <button id="tab" onclick="Act()">Активности</button>
-            <button id="tab" onclick="UKadar()">Училишен кадар</button>
-            <button id="tab" onclick="OTabla()">Огласна табла</button>
-            <button id="tab" onclick="Contact()">Контакт</button>
-        </div>
-    </div>
+    </header>
+
     <main>
-        <!--auto-slider-->
-        <div id="auto-slider1">
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="images/auto-slider/gv4.jpg">
-                    <div class="text">Направете го вистинскиот чекор, изберете стручно образование</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="images/auto-slider/gv2.JPG"><br>
-                    <div class="text">СОУ „Гошо Викентиев”</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="images/auto-slider/gv1.jpg"><br>
-                    <div class="text">Електротехничка, машинска и сообраќајна струка</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="images/auto-slider/gv3.JPG"><br>
-                    <div class="text"><a href="zapisuvanje-informacii.html">Информации за запишување</a></div>
-                </div>
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <script>
-                var slideIndex = 0;
-                showSlides();
-
-                function showSlides() {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) { slideIndex = 1 }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                    setTimeout(showSlides, 4500);
-                }
-            </script>
-        </div>
-
-        <div id="div-with-img">
-            <div id="div-color-wrapper">
-                <div class="moto">
-                    <h1>Пријателство – Соработка – Креативност – Компетенција</h1>
-                </div>
-                <div id="about-short">
-                    <h2>СОУ „ГОШО ВИКЕНТИЕВ” - КОЧАНИ</h2>
-                    <p>
-                        Училиштето СОУ „Гошо Викентиев” е основано со одлука на народниот одбор на Кочани на 5 декември
-                        1959
-                        година како индустриско училиште со практична обука. До оформувањето на ниво на
-                        училиште, со паралелките се работело во подрумсата просторија на зградата на
-                        училиштето. Се обучувале металостругари, металоглодачи, машинобравари и бравари.
-                        Во учебната 1962/63 година училиштето ја почнало својата сопствена зграда во
-                        сегашното основно училиште „Малина Попиванова“.
-                        <br>
-                        <button id="more-btn" onclick="About()">Дознај Повеќе</button>
-                    </p>
-                </div>
-
-                <div id="fb-page">
-                    <div id="main-fb">
-                        <div id="fb-root"></div>
-                        <script async defer crossorigin="anonymous"
-                        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="CCZUH5Sb"></script>
-                        <div class="fb-page" data-href="https://www.facebook.com/gvkofb" data-tabs="timeline"
-                        data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true"
-                        data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/gvkofb" class="fb-xfbml-parse-ignore">
-                            <a href="https://www.facebook.com/gvkofb">СОУ „Гошо Викентиев“ Кочани, Македонија</a>
-                        </blockquote>
-                    </div>
-                    <div id="fb-txt">
-                        <p>
-                            &larr; Заследете ја нашата facebook страница  
-                        </p>
-                        <br>
-                    </div>
-                </div>
-                <div class="eTwinning">
-                    <img src="images/etwinning-logo.png" alt="">
-                </div>
-                <div id="links">
-                    <h2 id="title3">Линкови:</h2>
-                    <div id="link-wrapper">
-                        <a id="link" target="_blank" href="https://dic.edu.mk"><img src="images/links/drzaven-ispiten-centar-skopje.jpg"></a>
-                    </div>
-                    <div id="link-wrapper">
-                        <a id="link" target="_blank" href="https://mon.gov.mk"><img src="images/links/mon.png"></a>
-                    </div>
-                    <div id="link-wrapper">
-                        <a id="link" target="_blank" href="https://ednevnik.edu.mk"><img src="images/links/ednevnik.jpg"></a>
-                    </div>
-                    <div id="link-wrapper">
-                        <a id="link" target="_blank" href="http://www.e-matematika.mk"><img src="images/links/emtm.jpg"></a>
-                    </div>
-                    <div id="link-wrapper">
-                        <a id="link" target="_blank" href="https://www.bro.gov.mk"><img src="images/links/bro-logo.png"></a>
-                    </div>
-                </div>
+        <div class="layer">
+            <div class="container">
+                <h3>Учи паметно, работи стручно!</h3>
+                <br>
+                <p>Изберете го вистинскиот пат кон вашите соништа и <br>
+                    дозволете заедно да ги оствариме.</p>
                 <br>
                 <br>
+                <a href="#" id="zapisiSeBtn">Запиши се</a>
+                <a href="#" id="strukiBtn">Струки</a>
             </div>
         </div>
-        <!--<embed id="novosti-embed" type="text/html" src="novosti.html">
-        <p id="nov-link">
-            <a id="nov-link" href="oTabla.html">Види повеќе новости</a>
-        </p>-->
     </main>
+
+    <section id="struki">
+        <div class="container">
+            <div class="struka-main">
+                <img src="images/struki/svg/mechanical-gears.svg" alt="masinska">
+                <p>Со развојот на индустријата, техниката и науката се зголемува бројот на запишани ученици на различни
+                    профили од машинската струка.
+                    За тоа придонесуваат профилите: електроенергетика, машински техничар и техничар за производно
+                    машинство.</p>
+                <a href="#">Повеќе за струката</a>
+            </div>
+            <div class="struka-main">
+                <img src="images/struki/svg/processor-icon.svg" alt="elektro">
+                <p>Тоа е една од најатрактивните струки во нашето училиште, во која се застапени четири насоки:
+                    компјутерска техника и автоматика, електроника и телекомуникации,
+                    електроенергетика и електромеханичар.</p>
+                <a href="#">Повеќе за струката</a>
+            </div>
+            <div class="struka-main">
+                <img src="images/struki/svg/traffic.svg" alt="soobrakaj">
+                <p>Развојот на сообраќајната струка во училиштето започнува со формирањето на автошколата.
+                    Таа овозможува обука на ученици што ќе стекнат знаења од оваа струка, а во исто време ќе
+                    можат да добијат возачка дозвола.</p>
+                <a href="#">Повеќе за струката</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+    <hr id="hr1">
+    <div class="spacer"></div>
+
+    <section id="za-usilisteto">
+        <div class="container">
+            <div class="text">
+                <h4>За училиштето</h4>
+                <p>СОУ „Гошо Викентиев“ – Кочани е училиште со повеќе од 50-годишно постоење, коешто секогаш е отворено
+                    за нови идеи кои поттикнуваат индивидуалност и креативност, соработка и договор, развој на повисоки
+                    интелектуални способности и образование со кое ќе може да се одговари на животните предизвици.
+                    Нашето училиште е демократска мултикултурна заедница, во која ученикот секогаш е во центарот на
+                    вниманието.</p>
+                <br>
+                <br>
+                <a href="za-nas.html">Повеќе за училиштето</a>
+            </div>
+            <div class="map">
+                <iframe id="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.9997930410536!2d22.435495812360386!3d41.91436317111788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13558d002c2bfad7%3A0xd830002b0bfe8073!2sSOU%20Gosho%20Vikentiev!5e0!3m2!1sen!2smk!4v1705954760792!5m2!1sen!2smk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="gallery-section">
+        <button id="left" onclick="displayImg(-1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-caret-left-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+            </svg>
+        </button>
+        <div class="container" id="touch">
+            <img src="images/auto-slider/gv1.jpg" class="image" draggable="false">
+            <img src="images/auto-slider/gv2.jpg" class="image" draggable="false">
+            <img src="images/auto-slider/gv3.jpg" class="image" draggable="false">
+            <img src="images/auto-slider/gv4.jpg" class="image" draggable="false">
+        </div>
+        <button id="right" onclick="displayImg(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+        </button>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="vizija-section">
+        <div class="container">
+            <div class="left">
+                <h4>Визија</h4>
+                <h4 id="lightBlue">на училиштето</h4>
+                <p id="main-text">
+                    Се стремиме кон училиште кое е во чекор со сите општествени промени, каде што реформите во
+                    континуитет
+                    траат, а учениците имаат можност да ги задоволат своите различни образовни потреби. Преку заемно
+                    почитување и соработка ги поттикнуваме учениците да ги развиваат вештините, знаењата и ставовите
+                    неопходни за самоактуализација, како одговорни и образовани граѓани. Сакаме училиште кое има активна
+                    улога во општеството во согласност со интересите на општеството.
+                </p>
+                <br><br>
+                <div class="info">
+                    <div class="info-part">
+                        <p class="number">50</p>
+                        <p class="text">Простори за настава</p>
+                    </div>
+                    <div class="info-part">
+                        <p class="number">67</p>
+                        <p class="text">Професори</p>
+                    </div>
+                    <div class="info-part">
+                        <p class="number">38</p>
+                        <p class="text">Паралелки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/pictures/gosovikentiev13.JPG" alt="goso vikentiev">
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="links">
+        <h4>Линкови:</h4>
+        <div class="container">
+            <div id="link-wrapper">
+                <a id="link" target="_blank" href="https://dic.edu.mk"><img
+                        src="images/links/drzaven-ispiten-centar-skopje.jpg"></a>
+            </div>
+            <div id="link-wrapper">
+                <a id="link" target="_blank" href="https://mon.gov.mk"><img src="images/links/mon.png"></a>
+            </div>
+            <div id="link-wrapper">
+                <a id="link" target="_blank" href="https://ednevnik.edu.mk"><img src="images/links/ednevnik.jpg"></a>
+            </div>
+            <div id="link-wrapper">
+                <a id="link" target="_blank" href="http://www.e-matematika.mk"><img src="images/links/emtm.jpg"></a>
+            </div>
+            <div id="link-wrapper">
+                <a id="link" target="_blank" href="https://www.bro.gov.mk"><img src="images/links/bro-logo.png"></a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <ul id="ul-info">
             <li>
                 <a href="https://www.google.com/maps/place/Gosho+Vikenti
                 ev+High+School/@41.9139396,22.4359967,17z/data=!3m1!4b1!4m5!
                 3m4!1s0x0:0xf71acb29da1a14e3!8m2!3d41.9139356!4d22.4381854?hl=en">
-                Улица: Тодосија Паунов бр 111<br>2300 Кочани, Македонија</a>
+                    Улица: Тодосија Паунов бр 111<br>2300 Кочани, Македонија</a>
             </li>
             <li>Телефон: 033 345 432</li>
-            <li>Е-маил: <a href = "mailto: info@gosovikentiev.mk">info@gosovikentiev.mk</a></li>
+            <li>Е-маил: <a href="mailto: info@gosovikentiev.mk">info@gosovikentiev.mk</a></li>
         </ul>
+
+        <a id="logo-footer" href="index.html#lang-select"><img src="images/logo/logogoso2.png"></a>
+
         <ul id="ul-links">
             <li><a href="index.html">Почетна</a></li>
             <li><a href="about.html">За нас</a></li>
@@ -199,9 +223,10 @@
             <li><a href="oTabla.html">Огласна Табла</a></li>
             <li><a href="contact.html">Контакт</a></li>
         </ul>
-        <p class="img-center"><img src="images/logogoso2.png"></p>
-        <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев 2022 ©. Сите права се задржани.</p>
     </footer>
+    <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев 2022 ©. Сите права се задржани.</p>
     <script src="javaScript.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
