@@ -166,4 +166,9 @@
     #vizija-section .info {
         flex-direction: column;
     }
+    
+    .paralelka,
+    .masinski .paralelka {
+        width: auto;
+    }
 }
