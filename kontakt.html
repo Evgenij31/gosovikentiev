@@ -7,25 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="School Site Goso Vikentiev">
     <meta name="keywords" content="Goso Vikentiev, goso vikentiev, kocani">
-    <title>Струки - СОУ „Гошо Викентиев“</title>
+    <title>Контакт - СОУ „Гошо Викентиев“</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="shortcut icon" href="images/logo/logogoso2.png">
-    <meta property="og:image"
-        content="images/Sou_goso_vikentiev_thumbnail.jpg" />
+    <meta property="og:image" content="images/Sou_goso_vikentiev_thumbnail.jpg" />
 </head>
 
 <body>
     <header>
         <h1>СОУ „ГОШО ВИКЕНТИЕВ”</h1>
-        <h2>Струки</h2>
+        <h2>Контакт</h2>
         <div id="lang-select">
             <p id="lang">
-                <a href="struki.html"><img id="lang-img" src="images/lang-select/mk-flag.png"></a>
+                <a href="kontakt.html"><img id="lang-img" src="images/lang-select/mk-flag.png"></a>
             </p>
             <p id="lang">
-                <a href="struki-en.html"><img id="lang-img" src="images/lang-select/english-flag.png"></a>
+                <a href="kontakt-en.html"><img id="lang-img" src="images/lang-select/english-flag.png"></a>
             </p>
         </div>
 
@@ -36,29 +35,54 @@
                 <ul id="nav-ul">
                     <li><a href="index.html">Почетна</a></li>
                     <li><a href="za-nas.html">За нас</a></li>
-                    <li  class="page-selector"><a href="struki.html">Струки</a></li>
+                    <li><a href="struki.html">Струки</a></li>
                     <li><a href="aktivnosti.html">Активности</a></li>
                     <li><a href="kadar.html">Училишен Кадар</a></li>
                     <li><a href="oglasna-tabla.html">Огласна Табла</a></li>
-                    <li><a href="kontakt.html">Контакт</a></li>
+                    <li class="page-selector"><a href="kontakt.html">Контакт</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section id="struki">
-        <div class="struka elektrotehnicka" onclick="document.location.href='elektrotehnicka.html';">
-            <h3>Електротехничка</h3>
-        </div>
+    <section id="kontakt-main">
+        <div class="container">
+            <div class="contact-info">
+                <h5>Е-маил</h5>
+                <p><a href="mailto:sou_gosovikentiev@yahoo.com">sou_gosovikentiev@yahoo.com</a></p>
+                <p><a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a></p>
+                <br>
+                <h5>Телефон</h5>
+                <p>033 345 432</p>
+                <p>033-294-247</p>
+                <br>
+                <h5>Факс</h5>
+                <p>033-294-001</p>
+                <br>
+                <h5>Адреса</h5>
+                <p>Теодосија Паунов бр 111, 2300, Кочани Македонија</p>
+                <div class="socials">
+                    <img src="images/socials/face_icon.svg" alt="facebook" onclick="document.location.href='https://www.facebook.com/gvkofb';">
+                    <img src="images/socials/insta_icon.svg" alt="instagram" onclick="document.location.href='https://www.instagram.com/gosovikentiev?igsh=MzRlODBiNWFlZA==';">
+                </div>
+            </div>
 
-        <div class="struka masinska" onclick="document.location.href='masinska.html';">
-            <h3>Машинска</h3>
-        </div>
-
-        <div class="struka soobrakajna" onclick="document.location.href='soobrakajna.html';">
-            <h3>Сообраќај</h3>
+            <div class="contact-form">
+                <h5>Контакт форма</h5>
+                <form action="https://formsubmit.co/" method="POST">
+                    <input type="text" name="name" required placeholder="Име">
+                    <br>
+                    <input type="email" name="email" required placeholder="Презиме">
+                    <br>
+                    <br>
+                    <textarea name="poraka" id="poraka" cols="30" rows="10" placeholder="Ваша порака"></textarea>
+                    <br>
+                    <button type="submit">Испрати</button>
+                </form>
+            </div>
         </div>
     </section>
+
 
     <footer>
         <ul id="ul-info">

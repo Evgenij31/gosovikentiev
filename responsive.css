@@ -1,3 +1,19 @@
+@media (max-width: 1440px) {
+    #oglasna-main {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        gap: 10%;
+    }
+
+    #sidebar iframe {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     #openNav {
         display: block;
@@ -83,7 +99,7 @@
     #logo-footer {
         padding: 3rem;
     }
-    
+
     .text-image {
         flex-direction: column;
     }
@@ -94,12 +110,60 @@
     }
 
     #za-nas-tabela {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        overflow-x: scroll;
     }
 
     #struki .struka {
         background-size: cover;
+    }
+
+    #kadar-main {
+        padding: 0;
+    }
+
+    #menadzerski-tim {
+        flex-direction: column;
+    }
+
+    #menadzerski-tim .left,
+    #menadzerski-tim .right {
+        width: auto;
+        padding: 1rem;
+    }
+
+    #profesori .container {
+        flex-direction: column;
+    }
+
+    #profesori .container .group {
+        width: auto;
+        padding: 2vh 0;
+    }
+
+    #oglasna-main,
+    #oglasna-main article {
+        flex-direction: column;
+    }
+
+    #oglasna-main article img {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #kontakt-main .container {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .oglasna-post {
+        padding: 3rem;
+    }
+
+    #vizija-section .info {
+        flex-direction: column;
     }
 }

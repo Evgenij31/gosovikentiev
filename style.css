@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root {
     --primary-color: rgb(0, 141, 218);
@@ -24,7 +26,7 @@ body {
 header {
     background-color: var(--primary-color);
     box-shadow: 0px 0px 5px rgb(83, 83, 83);
-    font-family: Russo One;
+    font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
     padding-top: 2rem;
 }
@@ -81,13 +83,14 @@ header h1 {
     width: 100%;
 }
 
-#nav-bar ul { 
+#nav-bar ul {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4%;
     list-style-type: none;
+
 }
 
 #nav-bar ul li:hover {
@@ -98,6 +101,7 @@ header h1 {
 #nav-bar ul li {
     transition: .3s ease;
     padding: 20px 0;
+    font-family: Roboto;
 }
 
 #nav-bar ul li a {
@@ -528,4 +532,306 @@ footer #ul-info {
 
 #struki .soobrakajna {
     background-image: url(images/struki/soobrakaj.jpg);
+}
+
+#aktivnosti-main h3 {
+    font-size: 2.3vh;
+}
+
+#aktivnosti-main ul {
+    list-style: inside;
+}
+
+#aktivnosti-main ul li {
+    padding: 2px 0;
+}
+
+#sub-li li {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+#kadar-main {
+    padding: 5vh 10vh;
+}
+
+#menadzerski-tim {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
+    background-color: var(--custom-white);
+    color: var(--primary-color);
+    padding: 6vh 0;
+}
+
+#menadzerski-tim .left {
+    width: 30%;
+}
+
+#menadzerski-tim .left h2 {
+    font-size: 3vh;
+    padding: 10px 0;
+}
+
+#menadzerski-tim .left p {
+    font-size: 1.8vh;
+}
+
+#menadzerski-tim .right {
+    width: 40%;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+#menadzerski-tim .right h4 {
+    font-size: 2.2vh;
+    padding: 2px;
+}
+
+#strucni-sorabotnici li {
+    list-style: inside;
+}
+
+#strucni-sorabotnici ul {
+    padding: 16px 0;
+}
+
+#profesori {
+    padding: 3rem;
+}
+
+#profesori ul li {
+    list-style: inside;
+}
+
+#profesori .container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5%;
+}
+
+#profesori .group {
+    width: 20%;
+}
+
+#prof-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.6vh;
+}
+
+#oglasna-main {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5%;
+}
+
+#articles-ot article {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5%;
+    margin: 4vh 0;
+    transition: .3s ease;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-top: 0;
+    border-bottom: 0;
+    width: 90%;
+}
+
+#articles-ot article:hover {
+    text-shadow: 0 0 3px rgb(216, 216, 216);
+    border: 1px solid var(--secondary-color);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#articles-ot article:hover img {
+    box-shadow: 0 0 6px var(--shadow-color);
+}
+
+#articles-ot article img {
+    width: 30%;
+    height: 30vh;
+    object-fit: cover;
+    transform: .3s ease;
+}
+
+.oglasna-post h2 {
+    font-size: 2.8vh;
+    padding: 16px 0;
+    text-align: left;
+}
+
+.oglasna-post {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    padding: 3rem 20rem;
+}
+
+.oglasna-post .container {
+    min-height: 50vh;
+}
+
+#sidebar iframe {
+    top: 30px;
+    position: sticky;
+    margin: 16px;
+    box-shadow: 0 0 5px var(--shadow-color);
+}
+
+#sidebar {
+    padding: 16px;
+}
+
+#kontakt-main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#kontakt-main form input,
+#kontakt-main form textarea {
+    font-family: sans-serif;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 4px var(--shadow-color);
+}
+
+#kontakt-main form button {
+    padding: 8px;
+    background-color: var(--secondary-color);
+    border: 0;
+    color: rgb(0, 47, 255);
+    font-size: 1.6vh;
+    box-shadow: 0 0 4px var(--shadow-color);
+    transition: .3s ease;
+}
+
+#kontakt-main form button:hover {
+    color: var(--secondary-color);
+    background-color: rgb(0, 47, 255);
+    scale: 1.1;
+}
+
+#kontakt-main .container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 10%;
+}
+
+#kontakt-main .contact-info h5 {
+    font-size: 2.6vh;
+    padding: 5px 0;
+}
+
+#kontakt-main .contact-info a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 0;
+}
+
+.socials img {
+    width: 45px;
+    transition: .3s ease;
+}
+
+#kontakt-main .contact-info img {
+    width: 45px;
+    transition: .3s ease;
+}
+
+#kontakt-main .contact-info img:hover {
+    filter: drop-shadow(0 0 3px rgb(212, 212, 212));
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form h5 {
+    padding: 16px;
+    font-size: 2vh;
+}
+
+.oglasna-post img {
+    width: 100%;
+}
+
+#downloadBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 10px 0;
+    padding: 5px 2px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    text-shadow: 0 0 2px var(--shadow-color);
+    text-align: center;
+}
+
+/*struki*/
+
+.paralelki {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.masinski .paralelka {
+    width: 25%;
+}
+
+.paralelka {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.7vh;
+    border: 3px solid var(--tertiary-color);
+    padding: 20px;
+    margin: 16px;
+    width: 30%;
+    min-height: 25vh;
+}
+
+#struki-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.7vh;
+}
+
+#godini-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.4vh;
+}
+
+#paralelka-title {
+    text-align: left;
+    font-size: 2vh;
+}
+
+.overlay {
+    width: 100%;
+    position: absolute;
 }

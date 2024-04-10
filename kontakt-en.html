@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="mk">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Site Goso Vikentiev">
+    <meta name="keywords" content="Goso Vikentiev, goso vikentiev, kocani">
+    <title>СОУ „Гошо Викентиев” - Кочани</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="shortcut icon" href="images/logo/logogoso2.png">
+    <meta property="og:image" content="images/Sou_goso_vikentiev_thumbnail.jpg" />
+</head>
+
+<body>
+    <header>
+        <h1>MHS "Gosho Vikentiev"</h1>
+        <h2>Professions</h2>
+        <div id="lang-select">
+            <p id="lang">
+                <a href="kontakt.html"><img id="lang-img" src="images/lang-select/mk-flag.png"></a>
+            </p>
+            <p id="lang">
+                <a href="kontakt-en.html"><img id="lang-img" src="images/lang-select/english-flag.png"></a>
+            </p>
+        </div>
+
+        <div id="nav-bar">
+            <button id="openNav" onclick="OpenMobileNav()"><img src="images/mobile-nav/nav-bar-ico.png"></button>
+            <div class="responsive">
+                <button id="closeNav" onclick="CloseMobileNav()"><img src="images/mobile-nav/x-ico.png"></button>
+                <ul id="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="za-nas-en.html">About us</a></li>
+                    <li><a href="struki-en.html">Professions</a></li>
+                    <li><a href="aktivnosti-en.html">Activities</a></li>
+                    <li class="page-selector"><a href="kadar-en.html">School staff</a></li>
+                    <li><a href="oglasna-tabla-en.html">Notice board</a></li>
+                    <li><a href="kontakt-en.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="kontakt-main">
+        <div class="container">
+            <div class="contact-info">
+                <h5>Email</h5>
+                <p><a href="mailto:sou_gosovikentiev@yahoo.com">sou_gosovikentiev@yahoo.com</a></p>
+                <p><a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a></p>
+                <br>
+                <h5>Phone</h5>
+                <p>033 345 432</p>
+                <p>033-294-247</p>
+                <br>
+                <h5>Fax</h5>
+                <p>033-294-001</p>
+                <br>
+                <h5>Address</h5>
+                <p>Teodosia Paunov No. 111, 2300, Kocani Macedonia</p>
+                <div class="social">
+                    <img src="images/socials/face_icon.svg" alt="facebook" onclick="document.location.href='https://www.facebook.com/gvkofb';">
+                    <img src="images/socials/insta_icon.svg" alt="instagram" onclick="document.location.href='https://www.instagram.com/gosovikentiev?igsh=MzRlODBiNWFlZA==';">
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h5>Contact form</h5>
+                <form action="https://formsubmit.co/" method="POST">
+                    <input type="text" name="name" required placeholder="Name">
+                    <br>
+                    <input type="email" name="email" required placeholder="Surname">
+                    <br>
+                    <br>
+                    <textarea name="poraka" id="poraka" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul id="ul-info">
+            <li>
+                <a href="https://www.google.com/maps/place/Gosho+Vikenti
+                ev+High+School/@41.9139396,22.4359967,17z/data=!3m1!4b1!4m5!
+                3m4!1s0x0:0xf71acb29da1a14e3!8m2!3d41.9139356!4d22.4381854?hl=en">
+                    Adress: Todosia Paunov no 111<br>2300 Kocani, Macedonia</a>
+            </li>
+            <li>Telephone: 033 345 432</li>
+            <li>E-mail: <a href="mailto:sou_gosovikentiev@yahoo.com">sou_gosovikentiev@yahoo.com</a></li>
+            <li>E-mail: <a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a>
+            </li>
+        </ul>
+
+        <a id="logo-footer" href="index.html#lang-select"><img src="images/logo/logogoso2.png"></a>
+
+        <ul id="ul-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="za-nas.html">About us</a></li>
+            <li><a href="struki.html">Professions</a></li>
+            <li><a href="aktivnosti.html">Activities</a></li>
+            <li><a href="kadar.html">School staff</a></li>
+            <li><a href="oglasna-tabla.html">Notice board</a></li>
+            <li><a href="kontakt.html">Contact</a></li>
+        </ul>
+    </footer>
+    <p class="last-element">Web design team - SOU Gosho Vikentiev <span id="year"></span> ©. All rights reserved.</p>
+    <script src="index.js"></script>
+    <script src="slider.js"></script>
+    <script src="touch.js"></script>
+</body>
+
+</html>
