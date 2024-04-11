@@ -371,6 +371,7 @@ section h4 {
 
 #links #link-wrapper img {
     width: 100%;
+    margin-bottom: -4px;
 }
 
 #link-wrapper:hover {

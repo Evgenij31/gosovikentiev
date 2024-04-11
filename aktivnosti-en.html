@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo/logogoso2.png">
     <meta property="og:image" content="images/Sou_goso_vikentiev_thumbnail.jpg" />
 </head>
@@ -33,19 +34,19 @@
             <div class="responsive">
                 <button id="closeNav" onclick="CloseMobileNav()"><img src="images/mobile-nav/x-ico.png"></button>
                 <ul id="nav-ul">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index-en.html">Home</a></li>
                     <li><a href="za-nas-en.html">About us</a></li>
                     <li><a href="struki-en.html">Professions</a></li>
                     <li class="page-selector"><a href="aktivnosti-en.html">Activities</a></li>
                     <li><a href="kadar-en.html">School staff</a></li>
-                    <li><a href="oglasna-tabla-en.html">Notice board</a></li>
+                    <li><a href="oglasna-tabla.html">Notice board</a></li>
                     <li><a href="kontakt-en.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section id="aktivnosti-main">
+    <section id="aktivnosti-main" data-aos="fade-up" data-aos-duration="1800">
         <h3>Activities held at our school</h3>
         <ul>
             <li>Regular teaching</li>
@@ -105,19 +106,21 @@
         <a id="logo-footer" href="index.html#lang-select"><img src="images/logo/logogoso2.png"></a>
 
         <ul id="ul-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="za-nas.html">About us</a></li>
-            <li><a href="struki.html">Professions</a></li>
-            <li><a href="aktivnosti.html">Activities</a></li>
-            <li><a href="kadar.html">School staff</a></li>
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="za-nas-en.html">About us</a></li>
+            <li><a href="struki-en.html">Professions</a></li>
+            <li><a href="aktivnosti-en.html">Activities</a></li>
+            <li><a href="kadar-en.html">School staff</a></li>
             <li><a href="oglasna-tabla.html">Notice board</a></li>
-            <li><a href="kontakt.html">Contact</a></li>
+            <li><a href="kontakt-en.html">Contact</a></li>
         </ul>
     </footer>
     <p class="last-element">Web design team - SOU Gosho Vikentiev <span id="year"></span> ©. All rights reserved.</p>
     <script src="index.js"></script>
-    <script src="slider.js"></script>
-    <script src="touch.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

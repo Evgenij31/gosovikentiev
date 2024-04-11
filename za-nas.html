@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo/logogoso2.png">
-    <meta property="og:image"
-        content="images/Sou_goso_vikentiev_thumbnail.jpg" />
+    <meta property="og:image" content="images/Sou_goso_vikentiev_thumbnail.jpg" />
 </head>
 
 <body>
@@ -48,7 +48,7 @@
 
     <section id="za-nas-main">
         <div class="container">
-            <div class="text-image">
+            <div data-aos="fade-up" data-aos-duration="1800" class="text-image">
                 <div class="text-container">
                     <h5>Мисија на училиштето</h5>
                     <p>
@@ -72,7 +72,7 @@
 
             <br><br><br>
 
-            <div class="text-image">
+            <div data-aos="fade-up" data-aos-duration="2000" class="text-image">
                 <img src="images/pictures/igraliste1.JPG" alt="">
                 <div class="text-container" style="text-align: right;">
                     <h5>Визија на училиштето</h5>
@@ -104,7 +104,7 @@
 
     <div class="spacer"></div>
 
-    <section id="za-nas-long-text">
+    <section data-aos="fade-up" data-aos-duration="1800" id="za-nas-long-text">
         <h4>За нашето училиште</h4>
         <p>
             Училиштето СОУ „Гошо Викентиев“ е основано со Одлука на народниот одбор на Кочани на 5 декември 1959 година
@@ -188,7 +188,7 @@
         </p>
     </section>
 
-    <section id="za-nas-tabela">
+    <section data-aos="zoom-in" data-aos-duration="1800" id="za-nas-tabela">
         <table>
             <tbody>
                 <tr>
@@ -316,7 +316,8 @@
             </li>
             <li>Телефон: 033 345 432</li>
             <li>Е-маил: <a href="mailto:sou_gosovikentiev@yahoo.com">sou_gosovikentiev@yahoo.com</a></li>
-            <li>Е-маил: <a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a></li>
+            <li>Е-маил: <a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a>
+            </li>
         </ul>
 
         <a id="logo-footer" href="index.html#lang-select"><img src="images/logo/logogoso2.png"></a>
@@ -332,8 +333,11 @@
         </ul>
     </footer>
     <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев <span id="year"></span> ©. Сите права се задржани.</p>
-    <script src="javaScript.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

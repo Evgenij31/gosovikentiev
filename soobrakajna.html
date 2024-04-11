@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo/logogoso2.png">
     <meta property="og:image"
         content="images/Sou_goso_vikentiev_thumbnail.jpg" />
@@ -45,7 +46,7 @@
                 <h3 id="godini-title">Четиригодишно образование</h3>
             </div>
                 <div class="paralelki">
-                    <div class="paralelka">
+                    <div class="paralelka" data-aos="flip-left" data-aos-duration="1000">
                         <h3 id="paralelka-title">Техничар за транспорт и шпедиција</h3>
                         <p>34 ученици, 1 паралелки, минимум 60 поени</p>
                             <li>Пополнување на сите видови сообраќајни докменти</li>
@@ -86,8 +87,10 @@
             <li><a href="kontakt.html">Контакт</a></li>
         </ul>
     </footer>
-    <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев <span id="year"></span> ©. Сите права се задржани.</p>
-    <script src="index.js"></script>
+    <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев <span id="year"></span> ©. Сите права се задржани.</p><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="slider.js"></script>
     <script src="touch.js"></script>
 </body>

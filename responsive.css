@@ -171,4 +171,8 @@
     .masinski .paralelka {
         width: auto;
     }
+
+    #struki .struka:hover {
+        background-size: 100%;
+    }
 }

@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo/logogoso2.png">
-    <meta property="og:image"
-        content="images/Sou_goso_vikentiev_thumbnail.jpg" />
+    <meta property="og:image" content="images/Sou_goso_vikentiev_thumbnail.jpg" />
 </head>
 
 <body>
@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <section id="aktivnosti-main">
+    <section id="aktivnosti-main" data-aos="fade" data-aos-duration="1800">
         <h3>Активности кои се одржуваат во нашето училиште</h3>
         <ul>
             <li>Редовна настава</li>
@@ -98,7 +98,8 @@
             </li>
             <li>Телефон: 033 345 432</li>
             <li>Е-маил: <a href="mailto:sou_gosovikentiev@yahoo.com">sou_gosovikentiev@yahoo.com</a></li>
-            <li>Е-маил: <a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a></li>
+            <li>Е-маил: <a href="mailto:sou-goshovikentiev-kochani@schools.mk">sou-goshovikentiev-kochani@schools.mk</a>
+            </li>
         </ul>
 
         <a id="logo-footer" href="index.html#lang-select"><img src="images/logo/logogoso2.png"></a>
@@ -114,8 +115,11 @@
         </ul>
     </footer>
     <p class="last-element">Веб дизајн тимот - СОУ Гошо Викентиев <span id="year"></span> ©. Сите права се задржани.</p>
-    <script src="javaScript.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
