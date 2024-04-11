@@ -836,3 +836,10 @@ footer #ul-info {
     width: 100%;
     position: absolute;
 }
+
+/*text selection color*/
+::selection {
+    color: rgb(255, 208, 0);
+    background: rgb(0, 10, 151);
+    text-shadow: 0 0 4px white;
+}

@@ -175,4 +175,12 @@
     #struki .struka:hover {
         background-size: 100%;
     }
+
+    #struki {
+        padding: 1rem;
+    }
+
+    .struka h3 {
+        font-size: 3vh;
+    }
 }
