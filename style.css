@@ -110,10 +110,11 @@ header h1 {
 }
 
 main {
-    background-image: url(images/Sou_goso_vikentiev2.jpg);
+    background-image: url(images/main.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     height: 90vh;
     z-index: 1;
     color: white;
@@ -674,9 +675,6 @@ footer #ul-info {
     align-items: top;
     flex-direction: column;
     padding: 3rem 20rem;
-}
-
-.oglasna-post .container {
     min-height: 50vh;
 }
 
@@ -790,6 +788,10 @@ footer #ul-info {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+}
+
+#downloadBtn:hover {
+    box-shadow: 0 0 4px var(--shadow-color);
 }
 
 /*struki*/
