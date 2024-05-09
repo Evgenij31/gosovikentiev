@@ -1,2 +1,1 @@
-# gosovikentiev
-Website for MHS "Goso Vikentiev"
+# Website for MHS "Gosho Vikentiev"
